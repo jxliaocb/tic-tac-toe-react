@@ -2,7 +2,7 @@ import { useState } from "react"
 import Square from "./square"
 import './Board.css'
 
-const Board = (restart) => {
+const Board = () => {
     const [squares, setSquares] = useState(Array(9).fill(null))
     const [winner, setWinner] = useState(null)
     const [nexPlayer, setNextPlayer] = useState('X')
